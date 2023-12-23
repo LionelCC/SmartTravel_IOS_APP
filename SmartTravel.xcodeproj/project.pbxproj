@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		629081CD2B379BAF00E44968 /* SmartTravelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081CC2B379BAF00E44968 /* SmartTravelApp.swift */; };
+		629081CF2B379BAF00E44968 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081CE2B379BAF00E44968 /* ContentView.swift */; };
+		629081D12B379BB100E44968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629081D02B379BB100E44968 /* Assets.xcassets */; };
+		629081D42B379BB100E44968 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629081D32B379BB100E44968 /* Preview Assets.xcassets */; };
+		629081DE2B379BB200E44968 /* SmartTravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081DD2B379BB200E44968 /* SmartTravelTests.swift */; };
+		629081E82B379BB200E44968 /* SmartTravelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081E72B379BB200E44968 /* SmartTravelUITests.swift */; };
+		629081EA2B379BB200E44968 /* SmartTravelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081E92B379BB200E44968 /* SmartTravelUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		629081DA2B379BB200E44968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629081C12B379BAF00E44968 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629081C82B379BAF00E44968;
+			remoteInfo = SmartTravel;
+		};
+		629081E42B379BB200E44968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629081C12B379BAF00E44968 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629081C82B379BAF00E44968;
+			remoteInfo = SmartTravel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		629081C92B379BAF00E44968 /* SmartTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		629081CC2B379BAF00E44968 /* SmartTravelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTravelApp.swift; sourceTree = "<group>"; };
+		629081CE2B379BAF00E44968 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		629081D02B379BB100E44968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629081D32B379BB100E44968 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		629081D92B379BB100E44968 /* SmartTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		629081DD2B379BB200E44968 /* SmartTravelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTravelTests.swift; sourceTree = "<group>"; };
+		629081E32B379BB200E44968 /* SmartTravelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTravelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		629081E72B379BB200E44968 /* SmartTravelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTravelUITests.swift; sourceTree = "<group>"; };
+		629081E92B379BB200E44968 /* SmartTravelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTravelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		629081C62B379BAF00E44968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629081D62B379BB100E44968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629081E02B379BB200E44968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		629081C02B379BAF00E44968 = {
+			isa = PBXGroup;
+			children = (
+				629081CB2B379BAF00E44968 /* SmartTravel */,
+				629081DC2B379BB200E44968 /* SmartTravelTests */,
+				629081E62B379BB200E44968 /* SmartTravelUITests */,
+				629081CA2B379BAF00E44968 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		629081CA2B379BAF00E44968 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				629081C92B379BAF00E44968 /* SmartTravel.app */,
+				629081D92B379BB100E44968 /* SmartTravelTests.xctest */,
+				629081E32B379BB200E44968 /* SmartTravelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		629081CB2B379BAF00E44968 /* SmartTravel */ = {
+			isa = PBXGroup;
+			children = (
+				629081CC2B379BAF00E44968 /* SmartTravelApp.swift */,
+				629081CE2B379BAF00E44968 /* ContentView.swift */,
+				629081D02B379BB100E44968 /* Assets.xcassets */,
+				629081D22B379BB100E44968 /* Preview Content */,
+			);
+			path = SmartTravel;
+			sourceTree = "<group>";
+		};
+		629081D22B379BB100E44968 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				629081D32B379BB100E44968 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		629081DC2B379BB200E44968 /* SmartTravelTests */ = {
+			isa = PBXGroup;
+			children = (
+				629081DD2B379BB200E44968 /* SmartTravelTests.swift */,
+			);
+			path = SmartTravelTests;
+			sourceTree = "<group>";
+		};
+		629081E62B379BB200E44968 /* SmartTravelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				629081E72B379BB200E44968 /* SmartTravelUITests.swift */,
+				629081E92B379BB200E44968 /* SmartTravelUITestsLaunchTests.swift */,
+			);
+			path = SmartTravelUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		629081C82B379BAF00E44968 /* SmartTravel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629081ED2B379BB200E44968 /* Build configuration list for PBXNativeTarget "SmartTravel" */;
+			buildPhases = (
+				629081C52B379BAF00E44968 /* Sources */,
+				629081C62B379BAF00E44968 /* Frameworks */,
+				629081C72B379BAF00E44968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartTravel;
+			productName = SmartTravel;
+			productReference = 629081C92B379BAF00E44968 /* SmartTravel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		629081D82B379BB100E44968 /* SmartTravelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629081F02B379BB200E44968 /* Build configuration list for PBXNativeTarget "SmartTravelTests" */;
+			buildPhases = (
+				629081D52B379BB100E44968 /* Sources */,
+				629081D62B379BB100E44968 /* Frameworks */,
+				629081D72B379BB100E44968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629081DB2B379BB200E44968 /* PBXTargetDependency */,
+			);
+			name = SmartTravelTests;
+			productName = SmartTravelTests;
+			productReference = 629081D92B379BB100E44968 /* SmartTravelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		629081E22B379BB200E44968 /* SmartTravelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629081F32B379BB200E44968 /* Build configuration list for PBXNativeTarget "SmartTravelUITests" */;
+			buildPhases = (
+				629081DF2B379BB200E44968 /* Sources */,
+				629081E02B379BB200E44968 /* Frameworks */,
+				629081E12B379BB200E44968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629081E52B379BB200E44968 /* PBXTargetDependency */,
+			);
+			name = SmartTravelUITests;
+			productName = SmartTravelUITests;
+			productReference = 629081E32B379BB200E44968 /* SmartTravelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		629081C12B379BAF00E44968 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					629081C82B379BAF00E44968 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					629081D82B379BB100E44968 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 629081C82B379BAF00E44968;
+					};
+					629081E22B379BB200E44968 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 629081C82B379BAF00E44968;
+					};
+				};
+			};
+			buildConfigurationList = 629081C42B379BAF00E44968 /* Build configuration list for PBXProject "SmartTravel" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 629081C02B379BAF00E44968;
+			productRefGroup = 629081CA2B379BAF00E44968 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				629081C82B379BAF00E44968 /* SmartTravel */,
+				629081D82B379BB100E44968 /* SmartTravelTests */,
+				629081E22B379BB200E44968 /* SmartTravelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		629081C72B379BAF00E44968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629081D42B379BB100E44968 /* Preview Assets.xcassets in Resources */,
+				629081D12B379BB100E44968 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629081D72B379BB100E44968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629081E12B379BB200E44968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		629081C52B379BAF00E44968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629081CF2B379BAF00E44968 /* ContentView.swift in Sources */,
+				629081CD2B379BAF00E44968 /* SmartTravelApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629081D52B379BB100E44968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629081DE2B379BB200E44968 /* SmartTravelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629081DF2B379BB200E44968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629081EA2B379BB200E44968 /* SmartTravelUITestsLaunchTests.swift in Sources */,
+				629081E82B379BB200E44968 /* SmartTravelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		629081DB2B379BB200E44968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629081C82B379BAF00E44968 /* SmartTravel */;
+			targetProxy = 629081DA2B379BB200E44968 /* PBXContainerItemProxy */;
+		};
+		629081E52B379BB200E44968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629081C82B379BAF00E44968 /* SmartTravel */;
+			targetProxy = 629081E42B379BB200E44968 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		629081EB2B379BB200E44968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		629081EC2B379BB200E44968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		629081EE2B379BB200E44968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartTravel/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LionelC.SmartTravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		629081EF2B379BB200E44968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartTravel/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LionelC.SmartTravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		629081F12B379BB200E44968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LionelC.SmartTravelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartTravel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartTravel";
+			};
+			name = Debug;
+		};
+		629081F22B379BB200E44968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LionelC.SmartTravelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartTravel.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartTravel";
+			};
+			name = Release;
+		};
+		629081F42B379BB200E44968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LionelC.SmartTravelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartTravel;
+			};
+			name = Debug;
+		};
+		629081F52B379BB200E44968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LionelC.SmartTravelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartTravel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		629081C42B379BAF00E44968 /* Build configuration list for PBXProject "SmartTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629081EB2B379BB200E44968 /* Debug */,
+				629081EC2B379BB200E44968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629081ED2B379BB200E44968 /* Build configuration list for PBXNativeTarget "SmartTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629081EE2B379BB200E44968 /* Debug */,
+				629081EF2B379BB200E44968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629081F02B379BB200E44968 /* Build configuration list for PBXNativeTarget "SmartTravelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629081F12B379BB200E44968 /* Debug */,
+				629081F22B379BB200E44968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629081F32B379BB200E44968 /* Build configuration list for PBXNativeTarget "SmartTravelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629081F42B379BB200E44968 /* Debug */,
+				629081F52B379BB200E44968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 629081C12B379BAF00E44968 /* Project object */;
+}
