@@ -12,7 +12,7 @@ Smart Travel Companion is an innovative iOS travel assistant app that leverages 
 
 ## Getting Started
 ### Prerequisites
-- iOS 13.0 or later
+- iOS 17.5 or later
 - Swift 5
 - Xcode
 
