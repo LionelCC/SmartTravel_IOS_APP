@@ -18,6 +18,10 @@
 		629081F92B37BEA000E44968 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081F82B37BEA000E44968 /* HomePage.swift */; };
 		629081FD2B37C84600E44968 /* ScrollingTextAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081FC2B37C84600E44968 /* ScrollingTextAnimation.swift */; };
 		629081FF2B37D27300E44968 /* GradientTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081FE2B37D27300E44968 /* GradientTextStyle.swift */; };
+		629082032B389A8E00E44968 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 629082022B389A8E00E44968 /* Config.plist */; };
+		629082042B389DB200E44968 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 629082022B389A8E00E44968 /* Config.plist */; };
+		629082052B389DB200E44968 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 629082022B389A8E00E44968 /* Config.plist */; };
+		629082092B389F5F00E44968 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 629082082B389F5F00E44968 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,8 @@
 		629081F82B37BEA000E44968 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		629081FC2B37C84600E44968 /* ScrollingTextAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingTextAnimation.swift; sourceTree = "<group>"; };
 		629081FE2B37D27300E44968 /* GradientTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTextStyle.swift; sourceTree = "<group>"; };
+		629082022B389A8E00E44968 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		629082082B389F5F00E44968 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,8 @@
 		629081C02B379BAF00E44968 = {
 			isa = PBXGroup;
 			children = (
+				629082082B389F5F00E44968 /* .gitignore */,
+				629082022B389A8E00E44968 /* Config.plist */,
 				629081CB2B379BAF00E44968 /* SmartTravel */,
 				629081DC2B379BB200E44968 /* SmartTravelTests */,
 				629081E62B379BB200E44968 /* SmartTravelUITests */,
@@ -243,7 +251,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629082092B389F5F00E44968 /* .gitignore in Resources */,
 				629081D42B379BB100E44968 /* Preview Assets.xcassets in Resources */,
+				629082032B389A8E00E44968 /* Config.plist in Resources */,
 				629081D12B379BB100E44968 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629082052B389DB200E44968 /* Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629082042B389DB200E44968 /* Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
