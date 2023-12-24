@@ -15,7 +15,7 @@
 		629081E82B379BB200E44968 /* SmartTravelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081E72B379BB200E44968 /* SmartTravelUITests.swift */; };
 		629081EA2B379BB200E44968 /* SmartTravelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081E92B379BB200E44968 /* SmartTravelUITestsLaunchTests.swift */; };
 		629081F72B37BBB400E44968 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081F62B37BBB400E44968 /* Styles.swift */; };
-		629081F92B37BEA000E44968 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081F82B37BEA000E44968 /* SignInView.swift */; };
+		629081F92B37BEA000E44968 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081F82B37BEA000E44968 /* HomePage.swift */; };
 		629081FD2B37C84600E44968 /* ScrollingTextAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081FC2B37C84600E44968 /* ScrollingTextAnimation.swift */; };
 		629081FF2B37D27300E44968 /* GradientTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629081FE2B37D27300E44968 /* GradientTextStyle.swift */; };
 /* End PBXBuildFile section */
@@ -49,7 +49,7 @@
 		629081E72B379BB200E44968 /* SmartTravelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTravelUITests.swift; sourceTree = "<group>"; };
 		629081E92B379BB200E44968 /* SmartTravelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTravelUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		629081F62B37BBB400E44968 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
-		629081F82B37BEA000E44968 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		629081F82B37BEA000E44968 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		629081FC2B37C84600E44968 /* ScrollingTextAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingTextAnimation.swift; sourceTree = "<group>"; };
 		629081FE2B37D27300E44968 /* GradientTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTextStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +102,7 @@
 		629081CB2B379BAF00E44968 /* SmartTravel */ = {
 			isa = PBXGroup;
 			children = (
-				629081F82B37BEA000E44968 /* SignInView.swift */,
+				629081F82B37BEA000E44968 /* HomePage.swift */,
 				629081F62B37BBB400E44968 /* Styles.swift */,
 				629081CC2B379BAF00E44968 /* SmartTravelApp.swift */,
 				629081CE2B379BAF00E44968 /* ContentView.swift */,
@@ -273,7 +273,7 @@
 				629081F72B37BBB400E44968 /* Styles.swift in Sources */,
 				629081CF2B379BAF00E44968 /* ContentView.swift in Sources */,
 				629081FD2B37C84600E44968 /* ScrollingTextAnimation.swift in Sources */,
-				629081F92B37BEA000E44968 /* SignInView.swift in Sources */,
+				629081F92B37BEA000E44968 /* HomePage.swift in Sources */,
 				629081CD2B379BAF00E44968 /* SmartTravelApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

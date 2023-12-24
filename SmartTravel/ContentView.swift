@@ -30,14 +30,20 @@ struct ContentView: View {
 
                         ScrollingTextAnimation(locations: locations, animationDuration: 2)
                             .frame(maxWidth: .infinity, alignment: .center)
+                            .fixedSize(horizontal: false, vertical: true) // Adapt height to content
+                            //.frame(height: 40)
+                            .offset(y: 10) // Adjust vertical position as needed
+                            .font(.system(size: 46))
+                            .fontWeight(.bold)
                     }
                 }
 
                 // Sign in button
-                NavigationLink(destination: SignInView()) {
-                    Text("Sign In")
+                NavigationLink(destination: HomePage()) {
+                    Text("Start Here")
+                        .font(.system(size:20))
+                        .fontWeight(.medium)
                         .buttonStyle()
-                        .offset(y: 170)
                 }
             }
         }

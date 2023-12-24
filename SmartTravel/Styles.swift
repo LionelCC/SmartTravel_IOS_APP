@@ -12,12 +12,16 @@ struct ButtonStyle: ViewModifier {
         content
             .font(.headline)
             .foregroundColor(.white)
+            .padding(.horizontal, 50)
             .padding()
             .background(Color(#colorLiteral(red: 0.498, green: 0.878, blue: 0.839, alpha: 1)))
             .cornerRadius(46)
             .shadow(color: .gray, radius: 10, x: 5, y: 5)
+            // .contentShape(Rectangle()) // Remove this line
     }
 }
+
+
 
 // Define a style for the title text
 struct TitleStyle: ViewModifier {

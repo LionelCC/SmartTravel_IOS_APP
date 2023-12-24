@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct SignInView: View {
+struct HomePage: View {
     var body: some View {
         VStack {
             // Your sign-in UI elements go here
-            Text("Sign In Page")
+            Text("Home Page")
         }
     }
 }
 
-struct SignInView_Previews: PreviewProvider {
+struct HomePage_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        HomePage()
     }
 }

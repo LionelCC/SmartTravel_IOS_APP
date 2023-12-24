@@ -15,13 +15,10 @@ struct ScrollingTextAnimation: View {
     var body: some View {
         VStack {
             Text(locations[currentLocationIndex])
-                .font(.system(size: 26))
-                .fontWeight(.bold)
                 .gradientTextStyle(index: currentLocationIndex) // Use with just the index
                 .transition(.asymmetric(insertion: .move(edge: .bottom), removal: .move(edge: .top)))
                 .id(currentLocationIndex)
         }
-        .frame(height: 35)
         .clipped()
         .onAppear {
             Timer.scheduledTimer(withTimeInterval: animationDuration, repeats: true) { _ in
