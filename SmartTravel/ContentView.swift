@@ -1,43 +1,51 @@
+//
+//  ContentView.swift
+//  SmartTravel
+//
+//  Created by Lionel Chen on 12/23/23.
+//
+
 import SwiftUI
 
 struct ContentView: View {
     private let locations = ["Paris", "Tokyo", "Hawaii", "Dubai", "Sydney"]
-    @State private var currentLocationIndex = 0
 
     var body: some View {
         NavigationView {
             VStack {
-                Spacer()
+                // "Welcome" text with flexible positioning
+                ZStack(alignment: .top) {
+                    Text("Welcome")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .offset(y: -30) // Adjust vertical position as needed
+                        .foregroundColor(.secondary) // Optional for visual distinction
 
-                // Combined Text for Title and Scrolling Locations
-                HStack {
-                    Text("Smart Trip to ")
-                        .titleStyle() // Using the custom style for title
-                    Text(locations[currentLocationIndex])
-                        .titleStyle() // Using the same custom style
-                        .foregroundColor(.blue)
-                        .onAppear {
-                            Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { _ in
-                                withAnimation {
-                                    currentLocationIndex = (currentLocationIndex + 1) % locations.count
-                                }
-                            }
-                        }
+                    // "Smart Trip to" text and scrolling animation
+                    VStack {
+                        Text("Smart Trip to")
+                            .font(.system(size: 36))
+                            .fontWeight(.bold)
+                            .frame(maxWidth: .infinity, alignment: .center)
+
+                        ScrollingTextAnimation(locations: locations, animationDuration: 2)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                    }
                 }
 
-                Spacer()
-
+                // Sign in button
                 NavigationLink(destination: SignInView()) {
                     Text("Sign In")
-                        .buttonStyle() // Applying the custom button style
+                        .buttonStyle()
+                        .offset(y: 170)
                 }
-
-                Spacer()
             }
-            .navigationTitle("Welcome")
         }
+        .navigationBarHidden(true)// Keep a placeholder for layout
+
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
