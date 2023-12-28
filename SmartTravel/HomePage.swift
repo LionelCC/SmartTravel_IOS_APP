@@ -8,10 +8,26 @@
 import SwiftUI
 
 struct HomePage: View {
+    let openAIService = OpenAIService(apiKey: Config.openAIKey)
+
     var body: some View {
         VStack {
-            // Your sign-in UI elements go here
             Text("Home Page")
+        }
+        .onAppear {
+            testOpenAIAPI()
+        }
+    }
+
+    func testOpenAIAPI() {
+        let testPrompt = "Translate the following English text to French: 'Hello, how are you?'"
+        openAIService.fetchCompletion(prompt: testPrompt) { result in
+            switch result {
+            case .success(let response):
+                print("OpenAI Response: \(response)")
+            case .failure(let error):
+                print("Error: \(error.localizedDescription)")
+            }
         }
     }
 }

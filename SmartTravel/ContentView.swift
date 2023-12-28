@@ -60,3 +60,4 @@ struct ContentView_Previews: PreviewProvider {
 }
 //API KEY: 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
 //API name: SmartTravelKey:
+
