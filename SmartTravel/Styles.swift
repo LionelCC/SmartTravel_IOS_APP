@@ -34,13 +34,14 @@ struct TitleStyle: ViewModifier {
 
 struct ActivityButtonStyle: ViewModifier {
     var isSelected: Bool
+    var gradient: Gradient
 
     func body(content: Content) -> some View {
         content
             .foregroundColor(isSelected ? Color.white : Color.gray)
             .padding(.horizontal, 20)
             .padding()
-            .background(BackgroundView(isSelected: isSelected))
+            .background(backgroundView)
             .cornerRadius(12)
             .overlay(
                 RoundedRectangle(cornerRadius: 12)
@@ -50,16 +51,12 @@ struct ActivityButtonStyle: ViewModifier {
             .transition(.scale)
     }
 
-    private struct BackgroundView: View {
-        let isSelected: Bool
-
-        var body: some View {
-            Group {
-                if isSelected {
-                    LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.929, green: 0.278, blue: 0.398, alpha: 1)), Color(#colorLiteral(red: 1, green: 0.604, blue: 0.353, alpha: 1))]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                } else {
-                    Color.white
-                }
+    private var backgroundView: some View {
+        Group {
+            if isSelected {
+                AnyView(LinearGradient(gradient: gradient, startPoint: .topLeading, endPoint: .bottomTrailing))
+            } else {
+                AnyView(Color.white)
             }
         }
     }
@@ -74,8 +71,8 @@ extension View {
     func titleStyle() -> some View {
         self.modifier(TitleStyle())
     }
-    func activityButtonStyle(isSelected: Bool) -> some View {
-        self.modifier(ActivityButtonStyle(isSelected: isSelected))
+    func activityButtonStyle(isSelected: Bool, gradient: Gradient) -> some View {
+        self.modifier(ActivityButtonStyle(isSelected: isSelected, gradient: gradient))
     }
 }
 

@@ -20,10 +20,17 @@ struct HomePage: View {
         "Relaxation": ["SPA", "Movies", "Sceneries"]
     ]
 
+    let gradients: [Gradient] = [
+        Gradient(colors: [.blue, .purple]),
+        Gradient(colors: [.green, .yellow]),
+        Gradient(colors: [.orange, .red]),
+        // Add more gradients as needed
+    ]
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                ForEach(categories.keys.sorted(), id: \.self) { category in
+                ForEach(Array(categories.keys.enumerated()), id: \.offset) { index, category in
                     Text(category)
                         .font(.headline)
                         .padding(.top)
@@ -35,7 +42,7 @@ struct HomePage: View {
                                     selectedActivities[activity]?.toggle()
                                 }) {
                                     Text(activity)
-                                        .activityButtonStyle(isSelected: selectedActivities[activity] ?? false)
+                                        .activityButtonStyle(isSelected: selectedActivities[activity] ?? false, gradient: gradients[index % gradients.count])
                                 }
                                 .padding(.horizontal, 10)
                             }
