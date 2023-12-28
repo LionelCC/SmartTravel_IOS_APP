@@ -8,27 +8,54 @@
 import SwiftUI
 
 struct HomePage: View {
-    let openAIService = OpenAIService(apiKey: Config.openAIKey)
+    @State private var selectedActivities: [String: Bool] = [
+        "Hiking": false, "Water Activities": false, "Theme Parks": false,
+        "Desserts": false, "Exotic Flavors": false,
+        "SPA": false, "Movies": false, "Sceneries": false
+    ]
+
+    let categories: [String: [String]] = [
+        "Outdoor Activities": ["Hiking", "Water Activities", "Theme Parks"],
+        "Food Lovers": ["Desserts", "Exotic Flavors"],
+        "Relaxation": ["SPA", "Movies", "Sceneries"]
+    ]
 
     var body: some View {
-        VStack {
-            Text("Home Page")
-        }
-        .onAppear {
-            testOpenAIAPI()
+        ScrollView {
+            VStack(alignment: .leading) {
+                ForEach(categories.keys.sorted(), id: \.self) { category in
+                    Text(category)
+                        .font(.headline)
+                        .padding(.top)
+
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            ForEach(categories[category]!, id: \.self) { activity in
+                                Button(action: {
+                                    selectedActivities[activity]?.toggle()
+                                }) {
+                                    Text(activity)
+                                        .activityButtonStyle(isSelected: selectedActivities[activity] ?? false)
+                                }
+                                .padding(.horizontal, 10)
+                            }
+                        }
+                    }
+                    .frame(height: 50)
+                }
+
+                Button("Get Recommendations", action: fetchRecommendations)
+                    .buttonStyle()
+                    .padding()
+            }
+            .padding(.horizontal)
         }
     }
 
-    func testOpenAIAPI() {
-        let testPrompt = "Translate the following English text to French: 'Hello, how are you?'"
-        openAIService.fetchCompletion(prompt: testPrompt) { result in
-            switch result {
-            case .success(let response):
-                print("OpenAI Response: \(response)")
-            case .failure(let error):
-                print("Error: \(error.localizedDescription)")
-            }
-        }
+    func fetchRecommendations() {
+        // Fetch recommendations logic
+        let selected = selectedActivities.filter { $0.value }.map { $0.key }
+        print("Selected activities: \(selected)")
     }
 }
 

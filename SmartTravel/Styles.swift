@@ -32,14 +32,50 @@ struct TitleStyle: ViewModifier {
     }
 }
 
+struct ActivityButtonStyle: ViewModifier {
+    var isSelected: Bool
+
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(isSelected ? Color.white : Color.gray)
+            .padding(.horizontal, 20)
+            .padding()
+            .background(BackgroundView(isSelected: isSelected))
+            .cornerRadius(12)
+            .overlay(
+                RoundedRectangle(cornerRadius: 12)
+                    .stroke(Color.gray, lineWidth: isSelected ? 0 : 1)
+            )
+            .shadow(color: isSelected ? Color.black.opacity(0.2) : Color.clear, radius: 10, x: 0, y: 0)
+            .transition(.scale)
+    }
+
+    private struct BackgroundView: View {
+        let isSelected: Bool
+
+        var body: some View {
+            Group {
+                if isSelected {
+                    LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.929, green: 0.278, blue: 0.398, alpha: 1)), Color(#colorLiteral(red: 1, green: 0.604, blue: 0.353, alpha: 1))]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                } else {
+                    Color.white
+                }
+            }
+        }
+    }
+}
+
 // Extending View to include these modifiers for easy usage
 extension View {
     func buttonStyle() -> some View {
         self.modifier(ButtonStyle())
     }
-
+    
     func titleStyle() -> some View {
         self.modifier(TitleStyle())
+    }
+    func activityButtonStyle(isSelected: Bool) -> some View {
+        self.modifier(ActivityButtonStyle(isSelected: isSelected))
     }
 }
 
