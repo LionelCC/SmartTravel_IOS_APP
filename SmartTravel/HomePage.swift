@@ -26,6 +26,15 @@ struct HomePage: View {
         Gradient(colors: [.orange, .red]),
         // Add more gradients as needed
     ]
+    
+    let activityRecommendations: [String: [String]] = [
+        "Hiking": ["Visit the Rocky Mountains", "Explore Yosemite National Park"],
+        "Swimming": ["Enjoy the beaches of Hawaii", "Relax at the Maldives"],
+        "Theme Parks": ["Experience Disneyland", "Adventure in Universal Studios"],
+        "SPA": ["Prestige Spa", "Thai Spa experience"],
+        // Add more mappings
+    ]
+
 
     var body: some View {
         ScrollView {
@@ -60,10 +69,20 @@ struct HomePage: View {
     }
 
     func fetchRecommendations() {
-        // Fetch recommendations logic
-        let selected = selectedActivities.filter { $0.value }.map { $0.key }
-        print("Selected activities: \(selected)")
-    }
+            let selected = selectedActivities.filter { $0.value }.map { $0.key }
+            var recommendations: [String] = []
+
+            for activity in selected {
+                if let recs = activityRecommendations[activity] {
+                    recommendations.append(contentsOf: recs)
+                }
+            }
+
+            // Present the recommendations
+            // This could be updating a state variable to display on the UI,
+            // navigating to a new view, or using a modal/alert.
+            print("Recommendations: \(recommendations)")
+        }
 }
 
 struct HomePage_Previews: PreviewProvider {
