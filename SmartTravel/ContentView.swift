@@ -39,8 +39,8 @@ struct ContentView: View {
                 }
 
                 // Sign in button
-                NavigationLink(destination: HomePage()) {
-                    Text("Continue")
+                NavigationLink(destination: UserProfileView()) {
+                    Text("Create User Profile")
                         .font(.system(size:20))
                         .fontWeight(.medium)
                         .buttonStyle()
